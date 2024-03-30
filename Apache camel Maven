@@ -1,1 +1,12 @@
+  #create Project
+  mvn archetype:generate \
+ -DarchetypeGroupId=org.apache.camel.archetypes \
+ -DarchetypeArtifactId=camel-archetype-spring-boot \
+ -DarchetypeVersion=3.18.0-SNAPSHOT \
+ -DgroupId=com.redhat \
+ -DartifactId=csb-app \
+ -Dversion=1.0 \
+ -DinteractiveMode=false
 
+#generate Project
+mvn package -f csb-app/pom.xml 
